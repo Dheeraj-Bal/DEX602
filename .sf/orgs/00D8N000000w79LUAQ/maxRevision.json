@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 283,
+    "serverMaxRevisionCounter": 302,
     "sourceMembers": {
         "ListView__Account.AllAccounts": {
             "serverRevisionCounter": 111,
@@ -327,13 +327,13 @@
         },
         "Profile__Training User": {
             "serverRevisionCounter": 174,
-            "lastRetrievedFromServer": 145,
+            "lastRetrievedFromServer": 174,
             "memberType": "Profile",
             "isNameObsolete": false
         },
         "Profile__Admin": {
             "serverRevisionCounter": 13,
-            "lastRetrievedFromServer": null,
+            "lastRetrievedFromServer": 13,
             "memberType": "Profile",
             "isNameObsolete": false
         },
@@ -573,7 +573,7 @@
         },
         "CustomApplication__Certification_Lightning": {
             "serverRevisionCounter": 193,
-            "lastRetrievedFromServer": 143,
+            "lastRetrievedFromServer": 193,
             "memberType": "CustomApplication",
             "isNameObsolete": false
         },
@@ -675,7 +675,7 @@
         },
         "PermissionSet__Certification": {
             "serverRevisionCounter": 198,
-            "lastRetrievedFromServer": 146,
+            "lastRetrievedFromServer": 198,
             "memberType": "PermissionSet",
             "isNameObsolete": false
         },
@@ -801,25 +801,25 @@
         },
         "Profile__B2B Reordering Portal Buyer Profile": {
             "serverRevisionCounter": 176,
-            "lastRetrievedFromServer": null,
+            "lastRetrievedFromServer": 176,
             "memberType": "Profile",
             "isNameObsolete": false
         },
         "CustomTab__AwInstructors": {
             "serverRevisionCounter": 213,
-            "lastRetrievedFromServer": null,
+            "lastRetrievedFromServer": 213,
             "memberType": "CustomTab",
             "isNameObsolete": false
         },
         "FlexiPage__AwInstructors": {
             "serverRevisionCounter": 211,
-            "lastRetrievedFromServer": null,
+            "lastRetrievedFromServer": 211,
             "memberType": "FlexiPage",
             "isNameObsolete": false
         },
         "AppMenu__Salesforce1": {
             "serverRevisionCounter": 177,
-            "lastRetrievedFromServer": null,
+            "lastRetrievedFromServer": 177,
             "memberType": "AppMenu",
             "isNameObsolete": false
         },
@@ -887,6 +887,30 @@
             "serverRevisionCounter": 279,
             "lastRetrievedFromServer": 279,
             "memberType": "ApexClass",
+            "isNameObsolete": false
+        },
+        "LightningComponentBundle__studentDetail": {
+            "serverRevisionCounter": 285,
+            "lastRetrievedFromServer": 285,
+            "memberType": "LightningComponentBundle",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__studentDetail/studentDetail.js": {
+            "serverRevisionCounter": 286,
+            "lastRetrievedFromServer": 286,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__studentDetail/studentDetail.js-meta.xml": {
+            "serverRevisionCounter": 287,
+            "lastRetrievedFromServer": 287,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__studentDetail/studentDetail.html": {
+            "serverRevisionCounter": 288,
+            "lastRetrievedFromServer": 288,
+            "memberType": "LightningComponentResource",
             "isNameObsolete": false
         }
     }
