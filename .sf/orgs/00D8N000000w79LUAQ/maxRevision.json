@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 273,
+    "serverMaxRevisionCounter": 283,
     "sourceMembers": {
         "ListView__Account.AllAccounts": {
             "serverRevisionCounter": 111,
@@ -752,26 +752,26 @@
             "isNameObsolete": false
         },
         "LightningComponentBundle__studentBrowser": {
-            "serverRevisionCounter": 261,
-            "lastRetrievedFromServer": 261,
+            "serverRevisionCounter": 280,
+            "lastRetrievedFromServer": 280,
             "memberType": "LightningComponentBundle",
             "isNameObsolete": false
         },
         "LightningComponentResource__studentBrowser/studentBrowser.js-meta.xml": {
-            "serverRevisionCounter": 262,
-            "lastRetrievedFromServer": 262,
+            "serverRevisionCounter": 281,
+            "lastRetrievedFromServer": 281,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__studentBrowser/studentBrowser.html": {
-            "serverRevisionCounter": 263,
-            "lastRetrievedFromServer": 263,
+            "serverRevisionCounter": 282,
+            "lastRetrievedFromServer": 282,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__studentBrowser/studentBrowser.js": {
-            "serverRevisionCounter": 264,
-            "lastRetrievedFromServer": 264,
+            "serverRevisionCounter": 283,
+            "lastRetrievedFromServer": 283,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
@@ -881,6 +881,12 @@
             "serverRevisionCounter": 268,
             "lastRetrievedFromServer": 268,
             "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "ApexClass__StudentBrowser": {
+            "serverRevisionCounter": 279,
+            "lastRetrievedFromServer": 279,
+            "memberType": "ApexClass",
             "isNameObsolete": false
         }
     }
