@@ -22,12 +22,13 @@
                     padding="around-small"
                     size="4">
                     <lightning-combobox
-                        name="deliverySelector"
-                        label="Select Delivery"
-                        variant="label-hidden"
-                        value={selectedDeliveryId}
-                        placeholder="Select a delivery"
-                        options={deliveries}>
+                    name="deliverySelector"
+                    label="Select Delivery"
+                    variant="label-hidden"
+                    value={selectedDeliveryId}
+                    options={deliveries}
+                    placeholder="Select a delivery"
+                    onchange= {onDeliveryChange}>
                     </lightning-combobox>
                 </lightning-layout-item>
             </lightning-layout>
