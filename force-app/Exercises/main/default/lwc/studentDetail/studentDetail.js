@@ -1,9 +1,11 @@
 import { LightningElement, wire } from 'lwc';
 
-import { getRecord, getFieldValue, getFieldDisplayValue } from 'lightning/uiRecordApi';
+import { getRecord } from 'lightning/uiRecordApi';
 
 import { subscribe, unsubscribe, MessageContext } from
 'lightning/messageService';
+
+import Utils from '../utils/utils';
 
 import SELECTED_STUDENT_CHANNEL from
 '@salesforce/messageChannel/SelectedStudentChannel__c';
@@ -32,7 +34,7 @@ export default class StudentDetail extends LightningElement {
     wiredStudent;
 		
 	get name() {
-		return this._getDisplayValue(this.wiredStudent.data, FIELD_Name);
+		return Utils.getDisplayValue(this.wiredStudent.data, FIELD_Name);
 	}
 
     get description() {
@@ -60,9 +62,9 @@ export default class StudentDetail extends LightningElement {
 		return title;
 	}
 	
-	_getDisplayValue(data, field) {
-		return getFieldDisplayValue(data, field) ? getFieldDisplayValue(data, field) : getFieldValue(data, field);
-	}
+	// _getDisplayValue(data, field) {
+	// 	return getFieldDisplayValue(data, field) ? getFieldDisplayValue(data, field) : getFieldValue(data, field);
+	// }
 
 	
 
