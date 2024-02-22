@@ -1,5 +1,5 @@
 {
-    "serverMaxRevisionCounter": 661,
+    "serverMaxRevisionCounter": 668,
     "sourceMembers": {
         "ListView__Account.AllAccounts": {
             "serverRevisionCounter": 111,
@@ -1028,26 +1028,26 @@
             "isNameObsolete": false
         },
         "LightningComponentBundle__layoutManager": {
-            "serverRevisionCounter": 615,
-            "lastRetrievedFromServer": 615,
+            "serverRevisionCounter": 662,
+            "lastRetrievedFromServer": 662,
             "memberType": "LightningComponentBundle",
             "isNameObsolete": false
         },
         "LightningComponentResource__layoutManager/layoutManager.js": {
-            "serverRevisionCounter": 616,
-            "lastRetrievedFromServer": 616,
+            "serverRevisionCounter": 663,
+            "lastRetrievedFromServer": 663,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__layoutManager/layoutManager.html": {
-            "serverRevisionCounter": 617,
-            "lastRetrievedFromServer": 617,
+            "serverRevisionCounter": 664,
+            "lastRetrievedFromServer": 664,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
         "LightningComponentResource__layoutManager/layoutManager.js-meta.xml": {
-            "serverRevisionCounter": 618,
-            "lastRetrievedFromServer": 618,
+            "serverRevisionCounter": 665,
+            "lastRetrievedFromServer": 665,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         },
@@ -1222,6 +1222,24 @@
         "LightningComponentResource__responsiveDatatable/responsiveDatatable.css": {
             "serverRevisionCounter": 652,
             "lastRetrievedFromServer": 652,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentBundle__utils": {
+            "serverRevisionCounter": 666,
+            "lastRetrievedFromServer": 666,
+            "memberType": "LightningComponentBundle",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__utils/utils.js": {
+            "serverRevisionCounter": 667,
+            "lastRetrievedFromServer": 667,
+            "memberType": "LightningComponentResource",
+            "isNameObsolete": false
+        },
+        "LightningComponentResource__utils/utils.js-meta.xml": {
+            "serverRevisionCounter": 668,
+            "lastRetrievedFromServer": 668,
             "memberType": "LightningComponentResource",
             "isNameObsolete": false
         }
