@@ -4,6 +4,7 @@ import getCertifiedStudents from '@salesforce/apex/CertifiedStudentList.getCerti
 export default class CertifiedStudentList extends LightningElement {
     @api certificationId = 0;
     @api certificationName = '';
+    btnGroupDisabled = true;
     certifiedStudents;
     error;
 
@@ -43,5 +44,10 @@ export default class CertifiedStudentList extends LightningElement {
         type: 'phone'
         }
         ];
+
+        onRowSelection(event) {
+            const numSelected = event.detail.selectedRows.length;
+            this.btnGroupDisabled = (numSelected === 0);
+            }
 
 }
