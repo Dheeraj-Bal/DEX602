@@ -2,7 +2,7 @@ import { LightningElement, api, wire } from 'lwc';
 import { getRecord } from 'lightning/uiRecordApi';
 import FIELD_Course_Delivery__City from '@salesforce/schema/Course_Delivery__c.City__c';
 import FIELD_Course_Delivery__Country from '@salesforce/schema/Course_Delivery__c.Country__c';
-import Utils from '../utils/utils';
+import Utils from 'c/utils';
 const fields = [FIELD_Course_Delivery__City, FIELD_Course_Delivery__Country];
 
 export default class DeliveryDetailMap extends LightningElement {
