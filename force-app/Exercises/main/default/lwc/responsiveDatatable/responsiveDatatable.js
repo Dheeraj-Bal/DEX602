@@ -1,6 +1,11 @@
 import { LightningElement, api } from 'lwc';
 
 export default class ResponsiveDatatable extends LightningElement {
+
+	@api columnConfig;
+	@api pkField;
+	rows;
+	_selectedRow;
 	
 	reformatRows = function(rowData) {
 		let colItems = this.columnConfig;
@@ -31,5 +36,49 @@ export default class ResponsiveDatatable extends LightningElement {
 		}
 		return reformattedRows;
 	}
+
+	@api
+	get rowData() {
+		return this.rows;
+		}
+
+	set rowData(value) {
+		if (typeof value !== "undefined") {
+		this.rows = this.reformatRows(value);
+		}
+		}
+
+	
+
+	onRowClick(event) {
+		const target = event.currentTarget;
+		const evt = new CustomEvent( 'rowclick' , {
+		detail: {
+		pk: target.getAttribute('data-pk')
+		}
+		});
+		this.dispatchEvent(evt);
+		this.highlightSelectedRow(target);
+		}
+
+	onRowDblClick(event) {
+		const target = event.currentTarget;
+		const evt = new CustomEvent( 'rowdblclick' , {
+		detail: {
+		pk: target.getAttribute('data-pk')
+		}
+		});
+		this.dispatchEvent(evt);
+		}
+
+		highlightSelectedRow(target) {
+			if (this._selectedRow) {
+				this._selectedRow.classList.remove("slds-is-selected");
+				}
+			target.classList.add("slds-is-selected");
+			this._selectedRow = target;
+		}
+
+	
 
 }
