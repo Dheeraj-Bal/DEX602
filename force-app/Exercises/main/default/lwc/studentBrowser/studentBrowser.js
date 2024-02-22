@@ -46,10 +46,21 @@ cols = [
             this.updateSelectedStudent(studentId);
             }
 
-            updateSelectedStudent(studentId){
-                publish(this.messageContext, SELECTED_STUDENT_CHANNEL, {
-                studentId: studentId
-                });
+            updateSelectedStudent(studentId) {
+                const grid =
+                this.template.querySelector('c-responsive-datatable');
+                const gallery =
+                this.template.querySelector('c-student-tiles');
+                if (grid) {
+                grid.setSelectedRecord(studentId);
+                }
+                if (gallery) {
+                gallery.setSelectedStudent(studentId);
+                }
+                publish(this.messageContext,
+                SELECTED_STUDENT_CHANNEL,
+                {studentId: studentId}
+                );
                 }
         handleRowDblClick(event) {
             const studentId = event.detail.pk;
