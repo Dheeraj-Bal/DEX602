@@ -198,5 +198,9 @@ this.locationName;
             });
             this.dispatchEvent(evt);
             }
+
+            onCancel() {
+                this.returnToBrowseMode();
+                }
  
 }
