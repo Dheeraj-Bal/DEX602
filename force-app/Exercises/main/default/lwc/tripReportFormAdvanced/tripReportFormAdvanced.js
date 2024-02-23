@@ -148,11 +148,11 @@ this.locationName;
             //---apiName, which contains the api name of the trip report object
  
             createRecord(recordInput)
-                .then(tripReport => {
-                    this.recordId = tripReport.id
-                    //TODO #7: after record creation, store the new ID of the trip report in our recordId property
-                   
-                    Utils.showToast(this,'Success', 'Trip Report Created', 'success');
+            .then(tripReport => {
+                this.recordId = tripReport.id;
+                Utils.showToast(this,'Success',
+                'Trip Report Created', 'success');
+                this.returnToBrowseMode();
                 })
                 .catch(error => {
                     let errors = reduceErrors(error);
@@ -166,8 +166,10 @@ this.locationName;
             fieldsToSave[FIELD_ID.fieldApiName] = this.recordId;
             const recordInput = { fields:fieldsToSave}
             updateRecord(recordInput)
-                .then(() => {
-                    Utils.showToast(this,'Success', 'Trip report updated', 'success');
+            .then(() => {
+                Utils.showToast(this,'Success',
+                'Trip report updated', 'success');
+                this.returnToBrowseMode();
                 })
                 .catch(error => {
                     let errors = reduceErrors(error);
@@ -187,5 +189,14 @@ this.locationName;
     onBlur() {
         this.saveButtonDisabled = !this.validateFields();
         }
+
+        returnToBrowseMode() {
+            const evt = new CustomEvent('tripreportmodechange', {
+            detail: {
+            mode: "browse"
+            },
+            });
+            this.dispatchEvent(evt);
+            }
  
 }
