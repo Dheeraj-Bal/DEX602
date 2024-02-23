@@ -14,6 +14,8 @@ export default class LayoutManager extends LightningElement {
 	modalHeader = '';
 	modalContent ='';
 
+	loading=true;
+
 	handleNavItemSelected(event) {
 		const selectedItemName = event.detail.itemName;
 		
@@ -66,5 +68,12 @@ export default class LayoutManager extends LightningElement {
 		modal.hide();
 	}
 
+
+	handleLoading() {
+		this.loading = true;
+		}
+		handleDoneLoading() {
+		this.loading = false;
+		}
 
 }
